@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/itemCero"
+        android:title="Carlos"/>
+
+    <item android:id="@+id/itemUno"
+        android:title="Lety"/>
+
+    <item android:id="@+id/itemDos"
+        android:title="Michell"/>
+
+    <item android:id="@+id/itemTres"
+        android:title="Belen"/>
+
+</menu>

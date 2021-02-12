@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tabs.tabDos">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativelaou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblLaptop"
+                android:text="ZenBook Dual"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgLaptop"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/lblLaptop"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/descarga" />
+
+            <TextView
+                android:id="@+id/txtLaptop"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgLaptop"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/textLaptop"
+                android:textAlignment="inherit"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tabs.tabCero">
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblFutbol"
+                android:text="Futbol"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgFutbol"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:layout_below="@+id/lblFutbol"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_football" />
+
+            <TextView
+                android:id="@+id/txtFut"
+                android:layout_width="195dp"
+                android:layout_height="236dp"
+                android:layout_below="@+id/lblFutbol"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_toEndOf="@+id/imgFutbol"
+                android:layout_toRightOf="@+id/imgFutbol"
+                android:text="@string/lblFutbol" />
+
+            <TextView
+                android:id="@+id/txtFut2"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFut"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/lblFutbol"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
