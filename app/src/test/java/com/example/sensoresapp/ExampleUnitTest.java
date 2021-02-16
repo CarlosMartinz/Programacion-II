@@ -1,4 +1,4 @@
-package com.example.appcalculo;
+package com.example.sensoresapp;
 
 import org.junit.Test;
 

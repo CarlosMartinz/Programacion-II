@@ -1,66 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:orientation="horizontal"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/btnCamara"
+        app:layout_constraintBottom_toBottomOf="@+id/btnProximidad"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        />
+
     <TextView
-        android:id="@+id/lblPresentacion"
-        android:text="@string/lblPresentacion"
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/lblTitle"
+        android:textSize="15dp"
         android:textStyle="bold"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"/>
+        android:textColorHint="@color/black"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        android:layout_below="@+id/lblPresentacion"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="50dp"
-        android:src="@drawable/ic_photo"/>
-
-    <EditText
-        android:id="@+id/txtNombre"
-        android:layout_below="@+id/img"
-        android:hint="@string/txtNombre"
-        android:textAlignment="center"
-        android:inputType="textPersonName"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCamara"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"/>
+        android:gravity="center_vertical"
+        android:text="@string/lblCamara"
+        android:textColor="@color/purple"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:cornerRadius="@dimen/dimen_bottom"
+        app:icon="@drawable/ic_next"
+        app:iconGravity="textEnd"
+        app:iconSize="35dp"
+        app:iconTint="@color/purple"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnProximidad"
+        android:layout_marginBottom="@dimen/dimen_default"
+        app:strokeColor="@color/purple"
+        app:strokeWidth="1dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
 
-    <EditText
-        android:id="@+id/txtSueldo"
-        android:layout_below="@+id/txtNombre"
-        android:hint="@string/txtSueldo"
-        android:textAlignment="center"
-        android:inputType="numberDecimal"
-        android:layout_width="match_parent"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnProximidad"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"/>
+        android:text="@string/lblProximidad"
+        android:textAllCaps="false"
+        android:textColor="@color/purple"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        app:cornerRadius="@dimen/dimen_bottom"
+        app:icon="@drawable/ic_next"
+        app:iconGravity="textEnd"
+        app:iconSize="35dp"
+        app:iconTint="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitle"
+        android:layout_marginTop="15dp"
+        app:strokeColor="@color/purple"
+        app:strokeWidth="1dp" />
 
-    <Button
-        android:id="@+id/btnEnviar"
-        android:text="@string/btnEnviar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@id/txtSueldo"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginTop="30dp"/>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
