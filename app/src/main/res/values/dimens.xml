@@ -2,4 +2,5 @@
 <resources>
     <dimen name="dimen_bottom">20dp</dimen>
     <dimen name="dimen_padding_default">10dp</dimen>
+    <dimen name="default_padding">15dp</dimen>
 </resources>
