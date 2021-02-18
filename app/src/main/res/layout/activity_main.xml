@@ -9,33 +9,42 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card"
-        android:layout_width="325dp"
-        android:layout_height="320dp"
-        android:layout_margin="8dp"
-        android:layout_marginTop="50dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:checkable="true"
+        android:id="@+id/cardCamara"
+        android:layout_width="330dp"
+        android:layout_height="290dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/default_padding">
 
-        <LinearLayout
+        <!-- Camara -->
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/default_padding"
-            android:orientation="vertical">
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/default_padding"
+            app:srcCompat="@drawable/camara" />
 
-            <!-- Media -->
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="prueba"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/ic_launcher_background" />
+    </com.google.android.material.card.MaterialCardView>
 
-        </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardVideo"
+        android:layout_width="330dp"
+        android:layout_height="290dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardCamara"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Video -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_margin="@dimen/default_padding"
+            app:srcCompat="@drawable/video2" />
 
     </com.google.android.material.card.MaterialCardView>
 
