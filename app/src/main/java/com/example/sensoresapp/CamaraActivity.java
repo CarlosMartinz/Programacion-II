@@ -41,7 +41,7 @@ public class CamaraActivity extends AppCompatActivity {
             }
         });
 
-        img =findViewById(R.id.imgCamara);
+        img = findViewById(R.id.imgCamara);
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

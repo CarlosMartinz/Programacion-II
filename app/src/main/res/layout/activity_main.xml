@@ -19,7 +19,7 @@
         android:layout_marginTop="@dimen/default_padding">
 
         <!-- Camara -->
-        <ImageButton
+        <ImageView
             android:id="@+id/btnCamera"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -41,6 +41,7 @@
 
         <!-- Video -->
         <ImageView
+            android:id="@+id/btnVideo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
