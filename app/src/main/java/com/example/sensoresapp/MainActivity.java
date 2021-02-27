@@ -26,10 +26,9 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+        ImageView btnvideo = (ImageView) findViewById(R.id.btnvideo);
 
-        ImageView btnVideo = (ImageView) findViewById(R.id.btnVideo);
-
-        btnVideo.setOnClickListener(new View.OnClickListener() {
+        btnvideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent next = new Intent(MainActivity.this, VideoActivity.class);
@@ -37,5 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }
