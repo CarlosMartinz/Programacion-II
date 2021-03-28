@@ -12,7 +12,6 @@
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/ic_launcher_background"
         android:layout_marginLeft="10dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
