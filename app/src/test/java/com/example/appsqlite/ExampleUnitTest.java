@@ -1,4 +1,4 @@
-package com.example.appcalculo;
+package com.example.appsqlite;
 
 import org.junit.Test;
 

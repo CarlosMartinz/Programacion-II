@@ -1,15 +1,16 @@
 <resources>
-    <string name="app_name">AppCalculo</string>
-    <string name="lblPresentacion">Datos</string>
-    <string name="txtNombre">Ingrese el nombre</string>
-    <string name="txtSueldo">Ingrese el sueldo</string>
-    <string name="btnEnviar">Enviar datos</string>
-
-    <string name="lblMuestra">Calcular</string>
-    <string name="lblName">Nombre:</string>
-    <string name="lblDescuentos">Descuentos</string>
-    <string name="lblAFP">AFP: $</string>
-    <string name="lblISSS">ISSS: $</string>
-    <string name="lblNeto">Sueldo Neto: $</string>
-    <string name="btnRegresar">Regresar</string>
+    <string name="app_name">Agenda progra II</string>
+    <string name="label">Buscar...</string>
+    <string name="nombre">Nombre</string>
+    <string name="edad">Edad</string>
+    <string name="guardar">Guardar</string>
+    <string name="more">Prueba</string>
+    <string name="content_description_more">descrip</string>
+    <string name="content_description_search">buscar</string>
+    <string name="search">buscar</string>
+    <string name="telefono">Telefono</string>
+    <string name="direccion">Direccion</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="agregar">Agregar</string>
 </resources>
