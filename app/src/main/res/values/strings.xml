@@ -1,15 +1,3 @@
 <resources>
-    <string name="app_name">AppCalculo</string>
-    <string name="lblPresentacion">Datos</string>
-    <string name="txtNombre">Ingrese el nombre</string>
-    <string name="txtSueldo">Ingrese el sueldo</string>
-    <string name="btnEnviar">Enviar datos</string>
-
-    <string name="lblMuestra">Calcular</string>
-    <string name="lblName">Nombre:</string>
-    <string name="lblDescuentos">Descuentos</string>
-    <string name="lblAFP">AFP: $</string>
-    <string name="lblISSS">ISSS: $</string>
-    <string name="lblNeto">Sueldo Neto: $</string>
-    <string name="btnRegresar">Regresar</string>
+    <string name="app_name">AppDely</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.appcalculo;
+package com.example.appdely;
 
 import org.junit.Test;
 
