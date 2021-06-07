@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Citas de vacunación</string>
-    <string name="label">DUI</string>
-    <string name="descrip">Nombre</string>
-    <string name="day">Dia</string>
-    <string name="mes">Mes</string>
-</resources>
