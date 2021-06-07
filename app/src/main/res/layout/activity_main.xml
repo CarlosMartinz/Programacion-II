@@ -1,66 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/lblPresentacion"
-        android:text="@string/lblPresentacion"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"/>
-
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        android:layout_below="@+id/lblPresentacion"
-        android:layout_marginLeft="70dp"
-        android:layout_marginRight="50dp"
-        android:src="@drawable/ic_photo"/>
-
     <EditText
-        android:id="@+id/txtNombre"
-        android:layout_below="@+id/img"
-        android:hint="@string/txtNombre"
-        android:textAlignment="center"
-        android:inputType="textPersonName"
+        android:id="@+id/editTextNumberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"/>
-
-    <EditText
-        android:id="@+id/txtSueldo"
-        android:layout_below="@+id/txtNombre"
-        android:hint="@string/txtSueldo"
+        android:ems="10"
+        android:hint="Primer numero"
         android:textAlignment="center"
+        android:layout_margin="25dp"
         android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"/>
+        android:ems="10"
+        android:hint="Segundo numero"
+        android:textAlignment="center"
+        android:layout_margin="25dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
 
     <Button
-        android:id="@+id/btnEnviar"
-        android:text="@string/btnEnviar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@id/txtSueldo"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginTop="30dp"/>
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:text="Suma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:text="Resta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:text="Multiplicacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:text="Division"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Resultado"
+        android:textColor="@color/purple_500"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
